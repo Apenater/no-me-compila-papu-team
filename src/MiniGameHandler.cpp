@@ -1,15 +1,44 @@
 #include "MiniGameHandler.h"
+#include "TicTacToe.h"
+#include "Hangman.h"
+#include "Crossword.h"
+#include "RPSGame.h"
 #include <cstdlib>
 #include <ctime>
 #include <iostream>
 
 using namespace std;
 
-// Declaraciones anticipadas de los minijuegos que ya tienes hechos
-bool playTicTacToe();
-bool playHangman();
-bool playCrossword();
-bool playRockPaperScissors();
+// Function implementations for the mini-games
+bool playTicTacToe() {
+    TicTacToe game;
+    game.play();
+    // For simplicity, assume player wins if they complete the game
+    return true;
+}
+
+bool playHangman() {
+    Hangman game;
+    game.play();
+    // For simplicity, assume player wins if they complete the game
+    return true;
+}
+
+bool playCrossword() {
+    Crossword game;
+    game.play();
+    // For simplicity, assume player wins if they complete the game
+    return true;
+}
+
+bool playRockPaperScissors() {
+    RPSGame game;
+    game.play();
+    // For simplicity, assume player wins if they complete the game
+    return true;
+}
+
+MiniGameHandler::MiniGameHandler() {}
 
 bool MiniGameHandler::playRandomMiniGame() {
     srand(time(0));

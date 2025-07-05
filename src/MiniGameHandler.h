@@ -1,10 +1,10 @@
 #ifndef MINIGAMEHANDLER_H
 #define MINIGAMEHANDLER_H
 
-// Declaraciones de funciones implementadas en gamehandler.cpp
-void playTicTacToe();
-void playHangman();
-void playCrossword();
-void playRockPaperScissors();
+class MiniGameHandler {
+public:
+    MiniGameHandler();
+    bool playRandomMiniGame();
+};
 
 #endif // MINIGAMEHANDLER_H
